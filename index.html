@@ -5,10 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    
     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=mail" />
-          
 </head>
 <body>
     <header>
@@ -31,15 +28,13 @@
             <img src="images/ProPic.jpeg" alt="ProPicture">
             <p>Hey there! I'm Itumeleng Mphuti, an aspiring software developer with a love for building and learning.
                 I enjoy solving problems, building meaningful projects, and exploring how technology can create real-world impact.
-            </p>
-            <p>
+            <br>
+            <br>
                 I'm currently working on various projects, including SpazaCheck. My goal is to grow as a developer, 
                 collaborate with like minded people, and build innovative solutions that make a difference.
             </p>
-            <a href="https://docs.google.com/document/d/1yaydiT81V3Dx1DektscDRsx4IrDiZGDk/edit?usp=sharing&ouid=112884397582991247226&rtpof=true&sd=true" target="_blank" download="Itumeleng_Mphuti_CV.pdf" class="cv-button">View My CV</a>
-
+            <a href="Doc/Mphuti Itumeleng 2024.docx.pdf" target="_blank"class="cv-button">View My CV</a>
     </section>
-
     <section id="skills">
         <h2>SKILLS & TECHNOLOGIES</h2>
     
@@ -48,31 +43,26 @@
             <h4>HTML</h4>
             <p>Intermediate</p>
         </div>
-    
         <div class="skill-item">
             <i class="devicon-css3-plain-wordmark colored"></i>
             <h4>CSS</h4>
             <p>Intermediate</p>
         </div>
-    
         <div class="skill-item">
             <i class="devicon-javascript-plain colored"></i>
             <h4>JavaScript</h4>
             <p>Beginner</p>
         </div>
-    
         <div class="skill-item">
             <i class="devicon-mysql-plain-wordmark colored"></i>
             <h4>MySQL</h4>
             <p>Beginner</p>
         </div>
-    
         <div class="skill-item">
             <i class="devicon-python-plain-wordmark colored"></i>
             <h4>Python</h4>
             <p>Beginner</p>
         </div>
-    
     </section>
     <section id="projects">
         <h2>PROJECTS</h2>
@@ -102,32 +92,25 @@
                 <a href="https://github.com/ItumelengMphuti/Favourite-dish.git" target="_blank">View on GitHub</a>
             </div>
     </section>
-
     <section id="contacts">
-        <h2>Find me on...</h2>
-        <form>
-            <label for="name">Name:</label><br>
-            <input type="text" id="name" name="name" required><br><br>
-            
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email" required><br><br>
-          
-            <label for="message">Message:</label><br>
-            <textarea id="message" name="message" required></textarea><br><br>
+        <h2>FIND ME ON...</h2>
+        <form id="my-form">
+            <input type="text" id="name" placeholder="Enter your name"><br><br>
+            <input type="email" id="email" placeholder="Enter your email"><br><br>
+            <textarea id="message" placeholder="Enter your message"></textarea><br><br>
             <button type="submit">Submit</button>
-          </form>
+        </form>
     </section>
-
     <footer>
         <div class="socials">
-            <a href="mailto:itumeleng1mphuti@gmail.com">
-                <span class="material-symbols-outlined">mail</span>
+            <a href="mailto:itumeleng1mphuti@gmail.com" class="social-icon">
+                <img src="images/email_icon.png" alt="Email" class="social-img">
             </a>
-            <a href="https://www.linkedin.com/in/itumeleng-mphuti-ab460314b" target="_blank">
-                <i class="devicon-linkedin-plain colored"></i>
+            <a href="https://www.linkedin.com/in/itumeleng-mphuti-ab460314b" target="_blank" class="social-icon">
+                <img src="images/linkedin_icon.png" alt="LinkedIn" class="social-img">
             </a>
-            <a href="https://github.com/ItumelengMphuti" target="_blank">
-                <i class="devicon-github-original colored"></i>
+            <a href="https://github.com/ItumelengMphuti" target="_blank" class="social-icon">
+                <img src="images/github_icon.png" alt="GitHub" class="social-img">
             </a>
         </div>
         <div class="footer-logo">
@@ -135,8 +118,12 @@
             <p>© 2025 TumiVerse | All Rights Reserved</p>
         </div>
     </footer>
-    
-
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+           emailjs.init("eYpcZgFS-SxWxs9T_"); // Initialize with your public key
+        })();
+     </script>
     <script src="main.js"></script>
 </body>
 </html>
