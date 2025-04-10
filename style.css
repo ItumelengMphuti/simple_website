@@ -44,6 +44,7 @@ nav a {
 nav a:hover {
   color: #006466;
 }
+
 section {
   padding: 20px;
 }
@@ -172,13 +173,10 @@ h2 {
   background: rgba(255, 255, 255, 0.05);
   border-radius: 15px;
   padding: 20px;
-  box-shadow: 0 0 15px rgba(0, 225, 255, 0.1);
+  box-shadow: 0 0 15px rgba(7, 7, 7, 0.1);
   transition: transform 0.3s ease, box-hadow 0.3 ease;
 }
-.project-card:hover {
-  transform: translateY(-10px) scale(1.00);
-  box-shadow: 0 0 25px rgba(1, 8, 15, 0.3);
-}
+
 .project-card img {
   width: 100%;
   height: 160px;
@@ -213,53 +211,87 @@ h2 {
 #contacts {
   text-align: center;
   padding: 50px 20px;
-  background-color: #f9f9f9;
-  border-radius: 8px;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-  max-width: 500px;
-  margin: 20px;
+  max-width: 900px;
+  margin: 20px auto;
+  position: relative;
 }
-#contacts {
-  margin-left: 30%;
+.contacts-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
 }
-form {
+.socials {
+  display: flex;
+  flex-direction: row;
   align-items: center;
-  gap: 15px;
+  gap: 40px;
 }
+
+.socials .social-icon {
+  width: 60px;
+  height: 60px;
+  transition: transform 0.3s ease;
+}
+
+.socials .social-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.socials .social-icon:hover img {
+  transform: scale(1.15);
+  filter: contrast(1.5);
+}
+
 form label {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: bold;
   color: #333;
+  margin-bottom: 10px;
 }
+
 form input,
 form textarea {
   width: 100%;
-  max-width: 400px;
-  padding: 12px;
-  margin: 10px;
+  max-width: 450px;
+  padding: 14px;
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 16px;
-  background: #fff;
-  box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  /* box-shadow: inset 1px 1px 8px rgba(0, 0, 0, 0.1); */
 }
+
 form textarea {
-  height: 120px;
+  height: 150px;
   resize: vertical;
 }
+
 form button {
   background-color: #4d194d;
   color: white;
   border: none;
-  padding: 12px 20px;
+  padding: 14px 24px;
   font-size: 18px;
-  border-radius: 5px;
+  border-radius: 8px;
   cursor: pointer;
-  transition: background 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
+
 form button:hover {
   background-color: #4a2782;
+  transform: scale(1.05);
 }
+
+
+
+/* Footer Styling */
 footer {
   background-color: #4a2782;
   color: white;
@@ -272,40 +304,99 @@ footer {
   gap: 30px;
 }
 
-.socials {
-  display: flex;
-  gap: 30px;
-  margin-bottom: 20px;
-}
-.socials .social-icon {
-  width: 50px;
-  height: 40px;
-  transition: transform 0.3s ease, opacity 0.3s ease;
-}
-.socials .social-icon img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  transition: transform 0.3s ease;
-}
-.socials .social-icon:hover img {
-  transform: scale(1.2);
-  filter: contrast(2);
-}
-.footer-logo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-}
-.footer-logo img {
-  max-width: 120px;
-  height: auto;
-  transition: transform 0.3s ease;
-}
 .footer-logo p {
   font-size: 16px;
   font-weight: lighter;
   margin-top: 5px;
   color: #fdfdfd;
+  text-align: center;
+}
+
+/* Footer Links Styling */
+footer a {
+  color: #fdfdfd;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #e0e0e0;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  nav a {
+    font-size: 14px;
+    padding: 8px 10px;
+  }
+  .typewriter {
+    animation: none;
+    white-space: normal;
+    border-right: none;
+    overflow: visible;
+  }
+}
+
+  .socials {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .socials .social-icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  form input,
+  form textarea {
+    max-width: 100%;
+  }
+
+@media screen and (max-width: 480px) {
+  .logo img {
+    width: 150px;
+  }
+  .navbar {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+  
+  .typewriter {
+    font-size: 1.2rem;
+    width: 80%;
+  }
+.cv-button {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  .project-card img {
+    height: 120px;
+  }
+
+   .contacts-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    text-align: center;
+  }
+  .footer-logo p {
+    font-size: 14px;
+  }
 }
