@@ -1,6 +1,7 @@
 emailjs.init("eYpcZgFS-SxWxs9T_");
 
 document.addEventListener("DOMContentLoaded", function () {
+    // EMAIL FORM HANDLING
     const form = document.getElementById("my-form");
 
     form.addEventListener("submit", function (event) {
@@ -20,6 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
             alert("Please enter a valid email address.");
             return;
         }
+
         const templateParams = {
             name: name,
             email: email,
@@ -42,4 +44,22 @@ document.addEventListener("DOMContentLoaded", function () {
         const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         return emailPattern.test(email);
     }
+
+    const hamburger = document.querySelector(".nav-btn label");
+    const navMenu = document.querySelector(".nav-links");
+  
+    // Toggle show class for showing and hiding the menu
+    if (hamburger && navMenu) {
+      hamburger.addEventListener("click", function () {
+        navMenu.classList.toggle("show");
+      });
+    }
+  
+    // Close the menu when a navigation link is clicked
+    document.querySelectorAll(".nav-links a").forEach(link => {
+      link.addEventListener("click", () => {
+        document.getElementById("nav-check").checked = false; // Uncheck the checkbox
+        navMenu.classList.remove("show"); // Optionally remove the "show" class
+      });
+    });
 });

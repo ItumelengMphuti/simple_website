@@ -1,131 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TumiVerse</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+  </head>
+  <body>
     <header>
-        <div class="navbar">
-        <div class="logo">
-            <img src="images/LOGO1.png" alt="logo">
+      <div class="nav">
+        <input type="checkbox" id="nav-check" />
+
+        <div class="nav-header">
+          <div class="logo">
+            <img src="images/LOGO1.png" alt="logo" />
+          </div>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#about_me">About Me</a></li>
-                <li><a href="#skills">Skills & Technologies</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contacts">Connect with me</a></li>
-            </ul>
-        </nav>
-    </div>
+
+        <div class="nav-btn">
+          <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+
+        <div class="nav-links">
+          <a href="#about_me">About Me</a>
+          <a href="#skills">Skills & Technologies</a>
+          <a href="#projects">Projects</a>
+          <a href="#contacts">Connect with me</a>
+        </div>
+      </div>
     </header>
+
     <section id="about_me">
-        <h2 class="typewriter">Hey there, I am Itumeleng Mphuti...</h2>
-            <img src="images/ProPic.jpeg" alt="ProPicture">
-            <p>...an aspiring software developer with a love for building and learning.
-                I enjoy solving problems, building meaningful projects, and exploring how technology can create real-world impact.
-            <br>
-            <br>
-                I'm currently working on various projects, including SpazaCheck. My goal is to grow as a developer, 
-                collaborate with like minded people, and build innovative solutions that make a difference.
-            </p>
-            <a href="Doc/Mphuti Itumeleng 2024.docx.pdf" target="_blank"class="cv-button">View My CV</a>
+      <h2 class="typewriter">Hey there, I am Itumeleng Mphuti...</h2>
+      <img src="images/ProPic.jpeg" alt="ProPicture" />
+      <p>
+        ...an aspiring software developer with a love for building and learning.
+        I enjoy solving problems, building meaningful projects, and exploring
+        how technology can create real-world impact.
+        <br />
+        <br />
+        I'm currently working on various projects, including SpazaCheck. My goal
+        is to grow as a developer, collaborate with like minded people, and
+        build innovative solutions that make a difference.
+      </p>
+      <a
+        href="Doc/Mphuti-Itumeleng-2024.docx.pdf"
+        target="_blank"
+        class="cv-button"
+        >View My CV</a
+      >
     </section>
     <section id="skills">
-        <h2>SKILLS & TECHNOLOGIES</h2>
-        <div class="skills-grid">
-             <div class="skill-item">
-            <i class="devicon-html5-plain-wordmark colored"></i>
-            <h4>HTML</h4>
-            <p>Intermediate</p>
+      <h2>SKILLS & TECHNOLOGIES</h2>
+      <div class="skills-grid">
+        <div class="skill-item">
+          <i class="devicon-html5-plain-wordmark colored"></i>
+          <h4>HTML</h4>
+          <p>Intermediate</p>
         </div>
         <div class="skill-item">
-            <i class="devicon-css3-plain-wordmark colored"></i>
-            <h4>CSS</h4>
-            <p>Intermediate</p>
-
+          <i class="devicon-css3-plain-wordmark colored"></i>
+          <h4>CSS</h4>
+          <p>Intermediate</p>
         </div>
         <div class="skill-item">
-            <i class="devicon-javascript-plain colored"></i>
-            <h4>JavaScript</h4>
-            <p>Beginner</p>
+          <i class="devicon-javascript-plain colored"></i>
+          <h4>JavaScript</h4>
+          <p>Beginner</p>
         </div>
         <div class="skill-item">
-            <i class="devicon-mysql-plain-wordmark colored"></i>
-            <h4>MySQL</h4>
-            <p>Beginner</p>
+          <i class="devicon-mysql-plain-wordmark colored"></i>
+          <h4>MySQL</h4>
+          <p>Beginner</p>
         </div>
         <div class="skill-item">
-            <i class="devicon-python-plain-wordmark colored"></i>
-            <h4>Python</h4>
-            <p>Beginner</p>
+          <i class="devicon-python-plain-wordmark colored"></i>
+          <h4>Python</h4>
+          <p>Beginner</p>
         </div>
-        </div>
-       
+      </div>
     </section>
     <section id="projects">
-        <h2>PROJECTS</h2>
-        <div class="container">
-            <div class="project-card">
-                <img src="images/Feeds.png" alt="Project 1 Screenshot">
-                <h3>Feeds For All</h3>
-                <p>A web site where community members can find feeding schemes, donor can fund and support the feeding schemes.</p>
-                <a href="https://itumelengmphuti.github.io/feeds-for-all/" target="_blank">View Project</a>
-            </div>
-            <div class="project-card">
-                <img src="images/ExpTracker.png" alt="Project 2 Screenshot">
-                <h3>Expense Tracker App</h3>
-                <p>A platform where users can add and view their daily/montly expenses.</p>
-                <a href="https://itumelengmphuti.github.io/Expense_Tracker/" target="_blank">View Project</a>
-            </div>
-            <div class="project-card">
-                <img src="images/InnoVestor.png" alt="Project 2 Screenshot">
-                <h3>InnoVestor</h3>
-                <p>A platform where investors meet innovators, for funding, mentoring, networking, etc.</p>
-                <a href="https://itumelengmphuti.github.io/InnoVestor/" target="_blank">View Project</a>
-            </div>
-            <div class="project-card">
-                <img src="images/FavFood.png" alt="Project 2 Screenshot">
-                <h3>Favourite Dish</h3>
-                <p>A web page showing South African favourite dishes.</p>
-                <a href="https://itumelengmphuti.github.io/Favourite-dish/" target="_blank">View Project</a>
-            </div>
+      <h2>PROJECTS</h2>
+      <div class="container">
+        <div class="project-card">
+          <img src="images/Feeds.png" alt="Project 1 Screenshot" />
+          <h3>Feeds For All</h3>
+          <p>
+            A web site where community members can find feeding schemes, donor
+            can fund and support the feeding schemes.
+          </p>
+          <a
+            href="https://itumelengmphuti.github.io/feeds-for-all/"
+            target="_blank"
+            >View Project</a
+          >
+        </div>
+        <div class="project-card">
+          <img src="images/ExpTracker.png" alt="Project 2 Screenshot" />
+          <h3>Expense Tracker App</h3>
+          <p>
+            A platform where users can add and view their daily/montly expenses.
+          </p>
+          <a
+            href="https://itumelengmphuti.github.io/Expense_Tracker/"
+            target="_blank"
+            >View Project</a
+          >
+        </div>
+        <div class="project-card">
+          <img src="images/InnoVestor.png" alt="Project 2 Screenshot" />
+          <h3>InnoVestor</h3>
+          <p>
+            A platform where investors meet innovators, for funding, mentoring,
+            networking, etc.
+          </p>
+          <a
+            href="https://itumelengmphuti.github.io/InnoVestor/"
+            target="_blank"
+            >View Project</a
+          >
+        </div>
+        <div class="project-card">
+          <img src="images/FavFood.png" alt="Project 2 Screenshot" />
+          <h3>Favourite Dish</h3>
+          <p>A web page showing South African favourite dishes.</p>
+          <a
+            href="https://itumelengmphuti.github.io/Favourite-dish/"
+            target="_blank"
+            >View Project</a
+          >
+        </div>
+      </div>
     </section>
     <section id="contacts">
-        <h2>CONNECT WITH ME</h2>
-        <div class="contacts-grid">
-            <div class="socials">
-            <a href="https://www.linkedin.com/in/itumeleng-mphuti-ab460314b" target="_blank" class="social-icon">
-                <img src="images/linkedin_icon.png" alt="LinkedIn" class="social-img">
-            </a>
-            <a href="https://github.com/ItumelengMphuti" target="_blank" class="social-icon">
-                <img src="images/github_icon.png" alt="GitHub" class="social-img">
-            </a>
+      <h2>CONNECT WITH ME</h2>
+      <div class="contacts-grid">
+        <div class="socials">
+          <a
+            href="https://www.linkedin.com/in/itumeleng-mphuti-ab460314b"
+            target="_blank"
+            class="social-icon"
+          >
+            <img
+              src="images/linkedin_icon.png"
+              alt="LinkedIn"
+              class="social-img"
+            />
+          </a>
+          <a
+            href="https://github.com/ItumelengMphuti"
+            target="_blank"
+            class="social-icon"
+          >
+            <img src="images/github_icon.png" alt="GitHub" class="social-img" />
+          </a>
         </div>
         <form id="my-form">
-            <input type="text" id="name" placeholder="Enter your name"><br><br>
-            <input type="email" id="email" placeholder="Enter your email"><br><br>
-            <textarea id="message" placeholder="Enter your message"></textarea><br><br>
-            <button type="submit">Submit</button>
+          <input
+            type="text"
+            id="name"
+            placeholder="Enter your name"
+          /><br /><br />
+          <input
+            type="email"
+            id="email"
+            placeholder="Enter your email"
+          /><br /><br />
+          <textarea id="message" placeholder="Enter your message"></textarea
+          ><br /><br />
+          <button type="submit">Submit</button>
         </form>
-        </div>
-         
-
+      </div>
     </section>
     <footer>
-     <p>© 2025 TumiVerse | All Rights Reserved &#10084;</p>
- 
+      <p>© 2025 TumiVerse | All Rights Reserved &#10084;</p>
     </footer>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script type="text/javascript">
-        (function(){
-           emailjs.init("eYpcZgFS-SxWxs9T_");
-        })();
-     </script>
+      (function () {
+        emailjs.init("eYpcZgFS-SxWxs9T_");
+      })();
+    </script>
     <script src="main.js"></script>
-</body>
+  </body>
 </html>
